@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleptmr.css">
+    <title>AAFP | Patient MR</title>
+</head>
+<body>
+    
+<!--Main wrapper-->
+<div class="wrapper">
+    <h1>Patient Registration form</h1>
+
+    <!--form container-->
+    <div class="form-container">
+    <form action="" method="post">
+        <!--flexbox and it's items-->
+        <div class="flex">
+            <div class="flex-item">
+            <!--full name field-->
+                <div class="field-container">
+                    <label for="full-name">Name: <span class="required">*</span></label>
+                    <input type="text" name="full-name"   pattern="^([a-zA-Z]{2,} ?)+$" id="full-name" placeholder="First Name" required="required" />
+                    <span class="error-messg"></span>              
+                </div>
+            
+             <!--email field-->
+             <div class="field-container">
+                <label for="full-name">s/o d/o w/o: <span class="required">*</span></label>
+                <input type="text" name="full-name"   pattern="^([a-zA-Z]{2,} ?)+$" id="full-name" placeholder="Last Name" required="required" />
+                <span class="error-messg"></span>              
+            </div>
+
+             <!--confirm email field-->
+                <div class="field-container">
+                    <label for="confirm-email">Date Of Birth: <span class="required">*</span></label>
+                    <input type="date" name="confirm-email" id="confirm-email" placeholder="Re-enter email" required="required" />
+                    <span class="error-messg"></span>
+                </div>
+                
+            </div>
+            <div class="flex-item">
+                <!--contact no field-->
+                <div class="field-container">
+                    <label for="contact-no">Contact no.: <span class="required">*</span></label>
+                    <input type="tel" name="contact-no" pattern=[0-9]{10} id="contact-no" placeholder="+923*********" required="required" />
+                    <span class="error-messg"></span>
+                </div>
+
+               
+                
+            </div>
+        </div>
+        <!--Submit button-->
+        <div class="center"><input type="submit" value="Register"></div>
+    </form>
+    </div>
+
+</div>
+
+
+</body>
+<script src="/js/appptntmr.js"></script>
+</html>

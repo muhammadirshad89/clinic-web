@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Record Management</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styleptmr.css">
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Patient Medical Record Management</a> 
+            </div>
+
+        </nav>   
+           <!-- /. NAV TOP  -->
+                <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+					</li>
+                     <li>
+                        <a  href="#"> Patient Registration</a>
+                    </li>
+                      <li>
+                        <a  href="ui.html"> UI Elements</a>
+                    </li>
+                    <li>
+                        <a  href="tab-panel.html"></i> Tabs & Panels</a>
+                    </li>
+						  
+                      <li  >
+                        <a  href="table.html"> Table Examples</a>
+                    </li>
+                    <li  >
+                        <a  href="form.html"> Forms </a>
+                    </li>				
+					
+					                   
+        
+
+                                </ul>
+                               
+                            </li>
+                        </ul>
+                      </li>  
+                 	
+                </ul>
+               
+            </div>
+            
+        </nav>  
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                     <h2>Patient Registration</h2>   
+                        <h5>All fields are mendatory except CNIC Number, after form filling please note down Patient MR #</h5>
+                       
+                    </div>
+                </div>
+                 <!-- /. ROW  -->
+                 <hr />
+                 <div class="form-container">
+                    <form action="" method="post">
+                        <!--flexbox and it's items-->
+                        <div class="flex">
+                            <div class="flex-item">
+                            <!--full name field-->
+                                <div class="field-container">
+                                    <label for="full-name">Name: <span class="required">*</span></label>
+                                    <input type="text" name="full-name"   pattern="^([a-zA-Z]{2,} ?)+$" id="full-name" placeholder="First Name" required="required" />
+                                    <span class="error-messg"></span>              
+                                </div>
+                            
+                             <!--email field-->
+                             <div class="field-container">
+                                <label for="full-name">s/o d/o w/o: <span class="required">*</span></label>
+                                <input type="text" name="full-name"   pattern="^([a-zA-Z]{2,} ?)+$" id="full-name" placeholder="Last Name" required="required" />
+                                <span class="error-messg"></span>              
+                            </div>
+                
+                             <!--confirm email field-->
+                                <div class="field-container">
+                                    <label for="confirm-email">Date Of Birth: <span class="required">*</span></label>
+                                    <input type="date" name="confirm-email" id="confirm-email" placeholder="Re-enter email" required="required" />
+                                    <span class="error-messg"></span>
+                                </div>
+                                
+                            </div>
+                            <div class="flex-item">
+                                <!--contact no field-->
+                                <div class="field-container">
+                                    <label for="contact-no">Contact no.: <span class="required">*</span></label>
+                                    <input type="tel" name="contact-no" pattern=[0-9]{10} id="contact-no" placeholder="+923*********" required="required" />
+                                    <span class="error-messg"></span>
+                                </div>
+                                <div class="field-container">
+                                    <label for="contact-no">CNIC Number : <span class="required">*</span></label>
+                                    <input type="tel" name="contact-no" pattern=[0-9]{10} id="contact-no" placeholder="+923*********" required="required" />
+                                    <span class="error-messg"></span>
+                                </div>
+                                <div class="field-container">
+                                    <label for="full-name">Remarks : <span class="required">*</span></label>
+                                    <input type="text" name="full-name"   pattern="^([a-zA-Z]{2,} ?)+$" id="full-name" placeholder="First Name" required="required" />
+                                    <span class="error-messg"></span>              
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+                        <br>
+                        <!--Submit button-->
+                        <div class="center"><input type="submit" value="Register"></div>
+                    </form>
+                    </div>
+    </div>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    
+    <script src="/js/appptntmr.js"></script>
+</body>
+</html>
